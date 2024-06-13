@@ -17,8 +17,6 @@ public class Main {
         System.out.println( warAndPeace.equals(crimeAndPunishment));
 
         System.out.print("\n Метод ХЭШ код: ");
-
-
         System.out.println(warAndPeace.hashCode());
 
 

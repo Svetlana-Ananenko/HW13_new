@@ -24,4 +24,19 @@ public class Author {
     public int hashCode() {
         return java.util.Objects.hash(authorName, authorSurname);
     }
+
+
+    public boolean equals(Object other) {
+        if (this.getClass(authorName) != other.getClass(authorName) || this.getClass(authorSurname) != other.getClass(authorSurname)) {
+            return false;
+        } else {
+            return true;
+        }
+
+
+    }
+
+
+
+
 }
