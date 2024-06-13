@@ -16,7 +16,8 @@ public class Main {
         System.out.print("\nCравним две книги через метод иквэлс, результат: ");
         System.out.println( warAndPeace.equals(crimeAndPunishment));
 
-        System.out.print("\n Метод ХЭШ код: "); ;
+        System.out.print("\n Метод ХЭШ код: ");
+
 
         System.out.println(warAndPeace.hashCode());
 
