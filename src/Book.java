@@ -34,12 +34,14 @@ public class Book {
         return java.util.Objects.hash(nameBook, authorBook, yearBook);
     }
 
-    public boolean equals(Book name) {
+    public boolean equals(Book other) {
         if (this.getClass() != other.getClass()) {
-            return false;
+            return this.toString().equalsIgnoreCase(other.toString());
+
+        } else {
+
+            return this.toString().equalsIgnoreCase(other.toString());
         }
-        Book warAndPeace = (Book) other;
-        return warAndPeace.equals(warAndPeace.nameBook);
     }
 
 }

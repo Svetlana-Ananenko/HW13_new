@@ -25,8 +25,15 @@ public class Author {
         return java.util.Objects.hash(authorName, authorSurname);
     }
 
+    public boolean equals(Author other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
 
+        } else {
 
+            return this.toString().equalsIgnoreCase(other.toString());
+        }
+    }
 
 
 
