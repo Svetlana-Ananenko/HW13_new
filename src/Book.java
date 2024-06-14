@@ -34,7 +34,7 @@ public class Book {
         return java.util.Objects.hash(nameBook, authorBook, yearBook);
     }
 
-    public boolean equals(Object other) {
+    public boolean equals(Book name) {
         if (this.getClass() != other.getClass()) {
             return false;
         }
