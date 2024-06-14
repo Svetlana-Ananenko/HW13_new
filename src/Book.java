@@ -34,14 +34,14 @@ public class Book {
         return java.util.Objects.hash(nameBook, authorBook, yearBook);
     }
 
-    public boolean equals(Book other) {
-        if (this.getClass() != other.getClass()) {
-            return this.toString().equalsIgnoreCase(other.toString());
-
-        } else {
-
-            return this.toString().equalsIgnoreCase(other.toString());
+    @Override
+    public boolean equals(Object other) {
+        if(this.getClass() != other.getClass()) {
+            return false;
         }
+        Book firstBook = (Book) other;
+        boolean bookComparison = ((nameBook.equals(firstBook.nameBook)) && (authorBook.equals(firstBook.authorBook)) && (yearBook == firstBook.yearBook));
+        return bookComparison;
     }
 
 }

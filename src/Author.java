@@ -25,16 +25,15 @@ public class Author {
         return java.util.Objects.hash(authorName, authorSurname);
     }
 
-    public boolean equals(Author other) {
-        if (this.getClass() != other.getClass()) {
+    @Override
+    public boolean equals(Object other) {
+        if(this.getClass() != other.getClass()) {
             return false;
-
-        } else {
-
-            return this.toString().equalsIgnoreCase(other.toString());
         }
+        Author author = (Author) other;
+        boolean authorComparison = (authorName.equals(author.authorName)) && (authorSurname.equals(author.authorSurname));
+        return  authorComparison;
     }
-
 
 
 
