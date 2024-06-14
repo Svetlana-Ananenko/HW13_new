@@ -26,15 +26,7 @@ public class Author {
     }
 
 
-    public boolean equals(Object other) {
-        if (this.getClass(authorName) != other.getClass(authorName) || this.getClass(authorSurname) != other.getClass(authorSurname)) {
-            return false;
-        } else {
-            return true;
-        }
 
-
-    }
 
 
 

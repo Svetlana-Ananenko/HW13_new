@@ -35,13 +35,11 @@ public class Book {
     }
 
     public boolean equals(Object other) {
-            if (this.getClass(nameBook) != other.getClass(nameBook) || this.getClass(authorBook) != other.getClass(authorBook) || this.getClass(yearBook) != other.getClass(yearBook)) {
+        if (this.getClass() != other.getClass()) {
             return false;
-        } else {
-            return true;
         }
-
-
+        Book warAndPeace = (Book) other;
+        return warAndPeace.equals(warAndPeace.nameBook);
     }
 
 }
